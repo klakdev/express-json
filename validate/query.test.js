@@ -4,8 +4,9 @@ const {validateQuery} = require('./query');
 const validators = {
     name : {
         //set error message to return
-        //set error code toreturn to client
+        //set error code to return to client
         type : String,
+        required : true,
         length : {
             min : 1,
             max : 20
@@ -14,12 +15,18 @@ const validators = {
     age : {
         //type Integer
         //type geo-json
-        type: Number, 
+        type: Number,
+        required : true,
         range : {
             min : 0,
             max : 120
         }
+    },
+    allowedAccess :{
+        type : Boolean,
+        required : true
     }
+
 }
 
 const query = {
