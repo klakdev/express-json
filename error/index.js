@@ -1,5 +1,8 @@
 
 
 module.exports  = {
-    BadRequestError : require('./BadRequestError')
+    api :{
+        BadRequestError : require('./BadRequestError'),
+    },
+    dev :  require('./DevErrors')
 };

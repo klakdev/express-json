@@ -4,11 +4,17 @@
   "description": "use json to describe your apis",
   "main": "index.js",
   "dependencies": {
-    "chai": "^4.2.0"
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "latest"
+  },
   "scripts": {
-    "test": "npm test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

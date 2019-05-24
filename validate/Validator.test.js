@@ -1,7 +1,8 @@
 
-const {validateQuery} = require('./query');
+const Validator = require('./Validator');
+const {Int32, String} = require('../types/index');
 
-const validators = {
+const schema = {
     name : {
         //set error message to return
         //set error code to return to client
@@ -13,27 +14,24 @@ const validators = {
         }
     },
     age : {
-        //type Integer
-        //type geo-json
-        type: Number,
+        //TODO type geo-json,
+        //TODO convert string to integer
+        type: Int32,
         required : true,
         range : {
             min : 0,
             max : 120
         }
-    },
-    allowedAccess :{
-        type : Boolean,
-        required : true
     }
+};
 
-}
 
 const query = {
     name : 'klakdev',
     age : 33
-}
+};
 
-const validator = validateQuery(validators);
-const sanitizedQuery = validator(query)
+const validator = new Validator(schema);
+validator.build();
+const sanitizedQuery = validator.validate(query);
 
