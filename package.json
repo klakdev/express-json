@@ -1,0 +1,32 @@
+{
+  "name": "express-json",
+  "version": "0.0.1",
+  "description": "use json to describe your apis",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "latest"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klakdev/express-json.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "klakdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klakdev/express-json/issues"
+  },
+  "homepage": "https://github.com/klakdev/express-json#readme"
+}

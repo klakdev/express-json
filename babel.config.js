@@ -1,0 +1,13 @@
+// babel.config.js
+module.exports = {
+    presets: [
+        [
+            '@babel/preset-env',
+            {
+                targets: {
+                    node: '12.1.0',
+                },
+            },
+        ],
+    ],
+};
